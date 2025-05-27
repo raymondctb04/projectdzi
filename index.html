@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dziquist Transport and Logistics offers professional car rentals, chairs, canopies, and table rentals. Book now for reliable service!">
+    <meta name="keywords" content="logistics, car rentals, chair rentals, canopy rentals, table rentals, Dziquist Transport">
+    <meta name="author" content="Dziquist Transport and Logistics">
+    <title>Dziquist Transport and Logistics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-bg { background-image: url('https://via.placeholder.com/1920x600?text=Hero+Image'); background-size: cover; background-position: center; }
+        .service-card { transition: transform 0.3s ease-in-out; }
+        .service-card:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="text-2.5xl font-bold"><a href="#" class="hover:text-gray-300">Dziquist Transport & Logistics</a></div>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+                <li><a href="services.html" class="hover:text-gray-300">Services</a></li>
+                <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-96 flex items-center justify-center text-center text-white">
+        <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to Dziquist Transport & Logistics</h1>
+            <p class="text-lg md:text-xl mb-6">Your trusted partner for car rentals, chairs, canopies, and table rentals.</p>
+            <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <a href="services.html#car-rentals" class="service-card bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://via.placeholder.com/300x200?text=Car+Rental" alt="Car Rental" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Car Rentals</h3>
+                    <p>Reliable and comfortable vehicles for all your travel needs.</p>
+                </a>
+                <a href="services.html#chair-rentals" class="service-card bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://via.placeholder.com/300x200?text=Chair+Rental" alt="Chair Rental" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Chair Rentals</h3>
+                    <p>High-quality chairs for events, ensuring comfort and style.</p>
+                </a>
+                <a href="services.html#canopy-rentals" class="service-card bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://via.placeholder.com/300x200?text=Canopy+Rental" alt="Canopy Rental" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Canopy Rentals</h3>
+                    <p>Sturdy canopies to provide shade and protection for any occasion.</p>
+                </a>
+                <a href="services.html#table-rentals" class="service-card bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://via.placeholder.com/300x200?text=Table+Rental" alt="Table Rental" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Table Rentals</h3>
+                    <p>Durable and elegant tables for your events and gatherings.</p>
+                </a>
+            </div>
+            <p class="text-center mt-8">Click on a service to view available items and pricing.</p>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Place Your Order</h2>
+            <p class="text-center mb-6">Please visit our <a href="services.html" class="text-blue-600 hover:underline">Services page</a> to view available items and pricing before placing your order.</p>
+            <form id="order-form" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 p-2 w-full border rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 p-2 w-full border rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required class="mt-1 p-2 w-full border rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="service" class="block text-sm font-medium text-gray-700">Service Required</label>
+                    <select id="service" name="service" required class="mt-1 p-2 w-full border rounded-md">
+                        <option value="">Select a service</option>
+                        <option value="Car Rental">Car Rental</option>
+                        <option value="Chair Rental">Chair Rental</option>
+                        <option value="Canopy Rental">Canopy Rental</option>
+                        <option value="Table Rental">Table Rental</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="details" class="block text-sm font-medium text-gray-700">Order Details</label>
+                    <textarea id="details" name="details" rows="4" required class="mt-1 p-2 w-full border rounded-md" placeholder="E.g., specific item, number of items, event date, duration, etc."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Submit Order</button>
+                <p id="form-message" class="mt-4 text-center text-red-600 hidden"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">About Us</h2>
+            <p class="text-lg max-w-2xl mx-auto">Dziquist Transport and Logistics is dedicated to providing top-notch rental services for vehicles, chairs, canopies, and tables. With a focus on reliability and customer satisfaction, we ensure your events and transportation needs are met with professionalism and care.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-info" class="py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+            <p class="text-lg mb-4">Email: trekuray@gmail.com</p>
+            <p class="text-lg mb-4">Phone: (123) 456-7890</p>
+            <p class="text-lg mb-4">Address: 123 Logistics Lane, Your City, Your Country</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 Dziquist Transport and Logistics. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#home" class="text-gray-300 hover:text-white mx-2">Home</a>
+                <a href="services.html" class="text-gray-300 hover:text-white mx-2">Services</a>
+                <a href="#about" class="text-gray-300 hover:text-white mx-2">About</a>
+                <a href="#contact" class="text-gray-300 hover:text-white mx-2">Contact</a>
+            </div>
+            <div class="mt-4">
+                <a href="#" class="text-gray-300 hover:text-white mx-2">Facebook</a>
+                <a href="#" class="text-gray-300 hover:text-white mx-2">Twitter</a>
+                <a href="#" class="text-gray-300 hover:text-white mx-2">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Form submission
+        document.getElementById('order-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                service: formData.get('service'),
+                details: formData.get('details')
+            };
+            const messageElement = document.getElementById('form-message');
+            try {
+                const response = await fetch('http://localhost:3000/api/orders', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                const result = await response.json();
+                console.log('Server response:', result);
+                if (response.ok) {
+                    messageElement.textContent = result.message;
+                    messageElement.classList.remove('text-red-600', 'hidden');
+                    messageElement.classList.add('text-green-600');
+                    form.reset();
+                } else {
+                    messageElement.textContent = result.error || 'Submission failed.';
+                    messageElement.classList.remove('hidden');
+                }
+            } catch (error) {
+                console.error('Fetch error:', error);
+                messageElement.textContent = 'Error connecting to server. Please try again.';
+                messageElement.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
