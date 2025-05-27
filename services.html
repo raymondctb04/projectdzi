@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View available items and pricing for car rentals, chair rentals, canopy rentals, and table rentals at Dziquist Transport and Logistics.">
+    <meta name="keywords" content="car rentals, chair rentals, canopy rentals, table rentals, Dziquist Transport">
+    <meta name="author" content="Dziquist Transport and Logistics">
+    <title>Services - Dziquist Transport and Logistics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .service-item { transition: transform 0.3s ease-in-out; }
+        .service-item:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="text-2.5xl font-bold"><a href="index.html" class="hover:text-gray-300">Dziquist Transport & Logistics</a></div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html#home" class="hover:text-gray-300">Home</a></li>
+                <li><a href="services.html" class="hover:text-gray-300">Services</a></li>
+                <li><a href="index.html#about" class="hover:text-gray-300">About</a></li>
+                <li><a href="index.html#contact" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services & Pricing</h2>
+            
+            <!-- Car Rentals -->
+            <div id="car-rentals" class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6">Car Rentals</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="service-item bg-white p-6 rounded-lg shadow-lg text-center">
+                        <img src="https://via.placeholder.com/300x200?text=Sedan" alt="Sedan" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                        <h4 class="text-xl font-semibold mb-2">Sedan</h4>
+                        <p class="mb-2">$50/day</p>
+                        <p>Comfortable sedan for up to 4 passengers.</p>
+                    </div>
+                    <div class="service-item bg-white p-6 rounded-lg shadow-lg text-center">
+                        <img src="https://via.placeholder.com/300x200?text=SUV" alt="SUV" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                        <h4 class="text-xl font-semibold mb-2">SUV</h4>
+                        <p class="mb-2">$80/day</p>
+                        <p>Spacious SUV for up to 6 passengers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chair Rentals -->
+            <div id="chair-rentals" class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6">Chair Rentals</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="service-item bg-white p-6 rounded-lg shadow-lg text-center">
+                        <img src="https://via.placeholder.com/300x200?text=Plastic+Chair" alt="Plastic Chair" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                        <h4 class="text-xl font-semibold mb-2">Plastic Chair</h4>
+                        <p class="mb-2">$2/day</p>
+                        <p>Durable plastic chairs for events.</p>
+                    </div>
+                    <div class="service-item bg-white p-6 rounded-lg shadow-lg text-center">
+                        <img src="https://via.placeholder.com/300x200?text=Cushioned+Chair" alt="Cushioned Chair" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                        <h4 class="text-xl font-semibold mb-2">Cushioned Chair</h4>
+                        <p class="mb-2">$5/day</p>
+                        <p>Comfortable cushioned chairs for formal events.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Canopy Rentals -->
+            <div id="canopy-rentals" class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6">Canopy Rentals</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="service-item bg-white p-6 rounded-lg shadow-lg text-center">
+                        <img src="https://via.placeholder.com/300x200?text=10x10+Canopy" alt="10x10 Canopy" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                        <h4 class="text-xl font-semibold mb-2">10x10 Canopy</h4>
+                        <p class="mb-2">$30/day</p>
+                        <p>Portable canopy for small gatherings.</p>
+                    </div>
+                    <div class="service-item bg-white p-6 rounded-lg shadow-lg text-center">
+                        <img src="https://via.placeholder.com/300x200?text=20x20+Canopy" alt="20x20 Canopy" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                        <h4 class="text-xl font-semibold mb-2">20x20 Canopy</h4>
+                        <p class="mb-2">$60/day</p>
+                        <p>Large canopy for bigger events.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table Rentals -->
+            <div id="table-rentals" class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6">Table Rentals</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="service-item bg-white p-6 rounded-lg shadow-lg text-center">
+                        <img src="https://via.placeholder.com/300x200?text=Round+Table" alt="Round Table" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                        <h4 class="text-xl font-semibold mb-2">Round Table</h4>
+                        <p class="mb-2">$10/day</p>
+                        <p>Round table for 6-8 people.</p>
+                    </div>
+                    <div class="service-item bg-white p-6 rounded-lg shadow-lg text-center">
+                        <img src="https://via.placeholder.com/300x200?text=Rectangular+Table" alt="Rectangular Table" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                        <h4 class="text-xl font-semibold mb-2">Rectangular Table</h4>
+                        <p class="mb-2">$12/day</p>
+                        <p>Rectangular table for 8-10 people.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center mt-8">Ready to book? Visit our <a href="index.html#contact" class="text-blue-600 hover:underline">Order Form</a> to place your order.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 Dziquist Transport and Logistics. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="index.html#home" class="text-gray-300 hover:text-white mx-2">Home</a>
+                <a href="services.html" class="text-gray-300 hover:text-white mx-2">Services</a>
+                <a href="index.html#about" class="text-gray-300 hover:text-white mx-2">About</a>
+                <a href="index.html#contact" class="text-gray-300 hover:text-white mx-2">Contact</a>
+            </div>
+            <div class="mt-4">
+                <a href="#" class="text-gray-300 hover:text-white mx-2">Facebook</a>
+                <a href="#" class="text-gray-300 hover:text-white mx-2">Twitter</a>
+                <a href="#" class="text-gray-300 hover:text-white mx-2">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
