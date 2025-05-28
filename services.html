@@ -9,28 +9,14 @@
     <title>Services - Dziquist Transport and Logistics</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .carousel-item {
-            display: none;
-            transition: opacity 0.5s ease-in-out;
-        }
-        .carousel-item.active {
-            display: block;
-        }
-        .service-card:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease-in-out;
-        }
-        .fade-in {
-            animation: fadeIn 1s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
+        .carousel-item { display: none; transition: opacity 0.5s ease-in-out; }
+        .carousel-item.active { display: block; }
+        .service-card:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; }
+        .fade-in { animation: fadeIn 1s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
 </head>
 <body class="font-sans text-gray-800">
-    <!-- Header -->
     <header class="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
         <nav class="container mx-auto flex justify-between items-center py-4 px-6">
             <div class="text-3xl font-bold text-blue-400"><a href="index.html" class="hover:text-blue-300">Dziquist Transport</a></div>
@@ -42,29 +28,21 @@
             </ul>
         </nav>
     </header>
-
-    <!-- Services Section -->
     <section id="services" class="py-16 bg-gray-100">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 fade-in">Our Services & Pricing</h2>
-
-            <!-- Carousel -->
             <div class="relative mb-12">
                 <div class="carousel w-full overflow-hidden">
                     <div class="carousel-item active flex">
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
-                                <p class="text-gray-600">Sedan</p>
-                            </div>
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4"><p class="text-gray-600">Sedan</p></div>
                             <h4 class="text-xl font-semibold mb-2">Sedan</h4>
                             <p class="mb-2">₵350/day</p>
                             <p>Comfortable sedan for up to 4 passengers.</p>
                             <a href="index.html#contact?service=Sedan" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
                         </div>
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
-                                <p class="text-gray-600">SUV</p>
-                            </div>
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4"><p class="text-gray-600">SUV</p></div>
                             <h4 class="text-xl font-semibold mb-2">SUV</h4>
                             <p class="mb-2">₵560/day</p>
                             <p>Spacious SUV for up to 6 passengers.</p>
@@ -73,18 +51,14 @@
                     </div>
                     <div class="carousel-item flex">
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
-                                <p class="text-gray-600">Bus</p>
-                            </div>
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4"><p class="text-gray-600">Bus</p></div>
                             <h4 class="text-xl font-semibold mb-2">Bus</h4>
                             <p class="mb-2">₵1000/day</p>
                             <p>Spacious bus for up to 30 passengers.</p>
                             <a href="index.html#contact?service=Bus" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
                         </div>
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
-                                <p class="text-gray-600">Truck</p>
-                            </div>
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4"><p class="text-gray-600">Truck</p></div>
                             <h4 class="text-xl font-semibold mb-2">Truck</h4>
                             <p class="mb-2">₵1200/day</p>
                             <p>Heavy-duty truck for cargo.</p>
@@ -93,18 +67,14 @@
                     </div>
                     <div class="carousel-item flex">
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
-                                <p class="text-gray-600">Pickup Truck</p>
-                            </div>
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4"><p class="text-gray-600">Pickup Truck</p></div>
                             <h4 class="text-xl font-semibold mb-2">Pickup Truck</h4>
                             <p class="mb-2">₵700/day</p>
                             <p>Versatile pickup for small loads.</p>
                             <a href="index.html#contact?service=Pickup Truck" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
                         </div>
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
-                                <p class="text-gray-600">Plastic Chair</p>
-                            </div>
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4"><p class="text-gray-600">Plastic Chair</p></div>
                             <h4 class="text-xl font-semibold mb-2">Plastic Chair</h4>
                             <p class="mb-2">₵14/day</p>
                             <p>Durable plastic chairs for events.</p>
@@ -113,18 +83,14 @@
                     </div>
                     <div class="carousel-item flex">
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
-                                <p class="text-gray-600">Cushioned Chair</p>
-                            </div>
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4"><p class="text-gray-600">Cushioned Chair</p></div>
                             <h4 class="text-xl font-semibold mb-2">Cushioned Chair</h4>
                             <p class="mb-2">₵35/day</p>
                             <p>Comfortable cushioned chairs.</p>
                             <a href="index.html#contact?service=Cushioned Chair" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
                         </div>
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
-                                <p class="text-gray-600">10x10 Canopy</p>
-                            </div>
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4"><p class="text-gray-600">10x10 Canopy</p></div>
                             <h4 class="text-xl font-semibold mb-2">10x10 Canopy</h4>
                             <p class="mb-2">₵210/day</p>
                             <p>Portable canopy for small gatherings.</p>
@@ -133,18 +99,14 @@
                     </div>
                     <div class="carousel-item flex">
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
-                                <p class="text-gray-600">20x20 Canopy</p>
-                            </div>
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4"><p class="text-gray-600">20x20 Canopy</p></div>
                             <h4 class="text-xl font-semibold mb-2">20x20 Canopy</h4>
                             <p class="mb-2">₵420/day</p>
                             <p>Large canopy for bigger events.</p>
                             <a href="index.html#contact?service=20x20 Canopy" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
                         </div>
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
-                                <p class="text-gray-600">Round Table</p>
-                            </div>
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4"><p class="text-gray-600">Round Table</p></div>
                             <h4 class="text-xl font-semibold mb-2">Round Table</h4>
                             <p class="mb-2">₵70/day</p>
                             <p>Round table for 6-8 people.</p>
@@ -153,9 +115,7 @@
                     </div>
                     <div class="carousel-item flex">
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
-                                <p class="text-gray-600">Rectangular Table</p>
-                            </div>
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4"><p class="text-gray-600">Rectangular Table</p></div>
                             <h4 class="text-xl font-semibold mb-2">Rectangular Table</h4>
                             <p class="mb-2">₵84/day</p>
                             <p>Rectangular table for 8-10 people.</p>
@@ -166,8 +126,6 @@
                 <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">❮</button>
                 <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">❯</button>
             </div>
-
-            <!-- Inventory Checker -->
             <div class="mt-12 text-center">
                 <h3 class="text-2xl font-semibold mb-4 fade-in">Check Availability</h3>
                 <input type="text" id="itemName" placeholder="Enter item (e.g., Sedan, Plastic Chair)" class="w-full md:w-1/2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 mb-4" required>
@@ -176,8 +134,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-6 text-center">
             <p class="mb-2">© 2025 Dziquist Transport and Logistics. All rights reserved.</p>
@@ -188,47 +144,32 @@
             </div>
         </div>
     </footer>
-
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script>
-        // Carousel
         let currentSlide = 0;
         const slides = document.querySelectorAll('.carousel-item');
         const totalSlides = slides.length;
-
         document.getElementById('nextBtn').addEventListener('click', () => {
             slides[currentSlide].classList.remove('active');
             currentSlide = (currentSlide + 1) % totalSlides;
             slides[currentSlide].classList.add('active');
         });
-
         document.getElementById('prevBtn').addEventListener('click', () => {
             slides[currentSlide].classList.remove('active');
             currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
             slides[currentSlide].classList.add('active');
         });
-
-        // Inventory Checker (Mock API - replace with real backend endpoint)
         document.getElementById('checkAvailability').addEventListener('click', () => {
             const itemName = document.getElementById('itemName').value.toLowerCase();
-            const inventory = {
-                'sedan': 5, 'suv': 3, 'bus': 2, 'truck': 4, 'pickup truck': 6,
-                'plastic chair': 50, 'cushioned chair': 30, '10x10 canopy': 10,
-                '20x20 canopy': 5, 'round table': 15, 'rectangular table': 12
-            };
+            const inventory = { 'sedan': 5, 'suv': 3, 'bus': 2, 'truck': 4, 'pickup truck': 6, 'plastic chair': 50, 'cushioned chair': 30, '10x10 canopy': 10, '20x20 canopy': 5, 'round table': 15, 'rectangular table': 12 };
             const result = inventory[itemName] || 0;
-            const message = result > 0 ? `${result} units available` : 'Out of stock';
-            document.getElementById('availabilityResult').textContent = message;
+            document.getElementById('availabilityResult').textContent = result > 0 ? `${result} units available` : 'Out of stock';
         });
-
-        // Fade-in animation on scroll
         window.addEventListener('scroll', () => {
             document.querySelectorAll('.fade-in').forEach((element, index) => {
                 const position = element.getBoundingClientRect();
                 if (position.top < window.innerHeight) {
-                    setTimeout(() => {
-                        element.classList.add('opacity-100');
-                    }, index * 200);
+                    setTimeout(() => { element.classList.add('opacity-100'); }, index * 200);
                 }
             });
         });
