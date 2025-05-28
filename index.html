@@ -3,22 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="View available items and pricing for car rentals, chair rentals, canopy rentals, and table rentals at Dziquist Transport and Logistics in Accra, Ghana.">
+    <meta name="description" content="Dziquist Transport and Logistics offers car rentals, chair rentals, canopy rentals, and table rentals with reliable service in Accra, Ghana.">
     <meta name="keywords" content="car rentals, chair rentals, canopy rentals, table rentals, Dziquist Transport, Accra Ghana">
     <meta name="author" content="Dziquist Transport and Logistics">
-    <title>Services - Dziquist Transport and Logistics</title>
+    <title>Dziquist Transport and Logistics</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .carousel-item {
-            display: none;
-            transition: opacity 0.5s ease-in-out;
-        }
-        .carousel-item.active {
-            display: block;
-        }
-        .service-card:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease-in-out;
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
         }
         .fade-in {
             animation: fadeIn 1s ease-in;
@@ -27,98 +19,102 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
+        .service-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
     </style>
 </head>
 <body class="font-sans text-gray-800">
     <!-- Header -->
     <header class="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
         <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-            <div class="text-3xl font-bold text-blue-400"><a href="index.html" class="hover:text-blue-300">Dziquist Transport</a></div>
+            <div class="text-3xl font-bold text-blue-400"><a href="#home" class="hover:text-blue-300">Dziquist Transport</a></div>
             <ul class="flex space-x-6">
-                <li><a href="index.html#home" class="hover:text-blue-300 transition">Home</a></li>
+                <li><a href="#home" class="hover:text-blue-300 transition">Home</a></li>
                 <li><a href="services.html" class="hover:text-blue-300 transition">Services</a></li>
-                <li><a href="index.html#about" class="hover:text-blue-300 transition">About</a></li>
-                <li><a href="index.html#contact" class="hover:text-blue-300 transition">Contact</a></li>
+                <li><a href="#about" class="hover:text-blue-300 transition">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-300 transition">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Services Section -->
-    <section id="services" class="py-16 bg-gray-100">
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-32 text-center">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 fade-in">Our Services & Pricing</h2>
+            <h1 class="text-5xl font-bold mb-4 fade-in">Welcome to Dziquist Transport & Logistics</h1>
+            <p class="text-xl mb-6 fade-in">Your trusted partner for rentals in Accra, Ghana.</p>
+            <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition fade-in">Place an Order</a>
+        </div>
+    </section>
 
-            <!-- Carousel -->
-            <div class="relative mb-12">
-                <div class="carousel w-full overflow-hidden">
-                    <div class="carousel-item active flex">
-                        <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Sedan" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                            <h4 class="text-xl font-semibold mb-2">Sedan</h4>
-                            <p class="mb-2">₵350/day</p>
-                            <p>Comfortable sedan for up to 4 passengers.</p>
-                        </div>
-                        <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <img src="https://images.unsplash.com/photo-1600585154526-990d4371c03b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="SUV" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                            <h4 class="text-xl font-semibold mb-2">SUV</h4>
-                            <p class="mb-2">₵560/day</p>
-                            <p>Spacious SUV for up to 6 passengers.</p>
-                        </div>
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6 fade-in">About Us</h2>
+            <p class="text-lg mb-4 fade-in">Dziquist Transport and Logistics is committed to providing top-quality rental services in Accra, Ghana. With years of experience, we ensure reliability and customer satisfaction.</p>
+            <p class="text-lg fade-in">Our fleet includes a variety of vehicles and equipment, delivered with professionalism.</p>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section id="services-preview" class="py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6 fade-in">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="h-40 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
+                        <p class="text-gray-600">Car Rentals</p>
                     </div>
-                    <div class="carousel-item flex">
-                        <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <img src="https://images.unsplash.com/photo-1591123120675-6f7f1e0b9f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Plastic Chair" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                            <h4 class="text-xl font-semibold mb-2">Plastic Chair</h4>
-                            <p class="mb-2">₵14/day</p>
-                            <p>Durable plastic chairs for events.</p>
-                        </div>
-                        <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <img src="https://images.unsplash.com/photo-1596462502278-63d2b9b3dd3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Cushioned Chair" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                            <h4 class="text-xl font-semibold mb-2">Cushioned Chair</h4>
-                            <p class="mb-2">₵35/day</p>
-                            <p>Comfortable cushioned chairs.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item flex">
-                        <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="10x10 Canopy" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                            <h4 class="text-xl font-semibold mb-2">10x10 Canopy</h4>
-                            <p class="mb-2">₵210/day</p>
-                            <p>Portable canopy for small gatherings.</p>
-                        </div>
-                        <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <img src="https://images.unsplash.com/photo-1600585154526-990d4371c03b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="20x20 Canopy" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                            <h4 class="text-xl font-semibold mb-2">20x20 Canopy</h4>
-                            <p class="mb-2">₵420/day</p>
-                            <p>Large canopy for bigger events.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item flex">
-                        <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <img src="https://images.unsplash.com/photo-1591123120675-6f7f1e0b9f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Round Table" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                            <h4 class="text-xl font-semibold mb-2">Round Table</h4>
-                            <p class="mb-2">₵70/day</p>
-                            <p>Round table for 6-8 people.</p>
-                        </div>
-                        <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Rectangular Table" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                            <h4 class="text-xl font-semibold mb-2">Rectangular Table</h4>
-                            <p class="mb-2">₵84/day</p>
-                            <p>Rectangular table for 8-10 people.</p>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-semibold">Car Rentals</h3>
+                    <p class="text-gray-600">From sedans to SUVs.</p>
+                    <a href="#contact?service=Car Rentals" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
                 </div>
-                <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">❮</button>
-                <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">❯</button>
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="h-40 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
+                        <p class="text-gray-600">Chair Rentals</p>
+                    </div>
+                    <h3 class="text-xl font-semibold">Chair Rentals</h3>
+                    <p class="text-gray-600">Durable and comfortable.</p>
+                    <a href="#contact?service=Chair Rentals" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="h-40 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
+                        <p class="text-gray-600">Canopy Rentals</p>
+                    </div>
+                    <h3 class="text-xl font-semibold">Canopy Rentals</h3>
+                    <p class="text-gray-600">For all event sizes.</p>
+                    <a href="#contact?service=Canopy Rentals" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
+                    <div class="h-40 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
+                        <p class="text-gray-600">Table Rentals</p>
+                    </div>
+                    <h3 class="text-xl font-semibold">Table Rentals</h3>
+                    <p class="text-gray-600">Round and rectangular.</p>
+                    <a href="#contact?service=Table Rentals" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
+                </div>
             </div>
+            <a href="services.html" class="mt-8 inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">View All Services</a>
+        </div>
+    </section>
 
-            <!-- Inventory Checker -->
-            <div class="mt-12 text-center">
-                <h3 class="text-2xl font-semibold mb-4 fade-in">Check Availability</h3>
-                <input type="text" id="itemName" placeholder="Enter item (e.g., Sedan, Plastic Chair)" class="w-full md:w-1/2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 mb-4" required>
-                <button id="checkAvailability" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Check</button>
-                <p id="availabilityResult" class="mt-4 text-lg"></p>
-            </div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6 fade-in">Contact Us</h2>
+            <p class="text-lg mb-4 fade-in">Address: Anyaa Market Crescent - Anyaa Market Accra Ghana</p>
+            <p class="text-lg mb-4 fade-in">Phone: <a href="tel:+233500188614" class="text-blue-600 hover:underline">+233 500188614</a> | <a href="tel:+233547922522" class="text-blue-600 hover:underline">+233 547922522</a></p>
+            <h3 class="text-2xl font-semibold mb-4 fade-in">Place Your Order</h3>
+            <form id="orderForm" class="max-w-lg mx-auto space-y-4">
+                <input type="text" name="name" placeholder="Full Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                <input type="email" name="email" placeholder="Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                <input type="tel" name="mobile" placeholder="Mobile Number (e.g., +233 500188614)" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" pattern="^\+233\s?\d{9}$" title="Please enter a valid Ghanaian mobile number starting with +233 followed by 9 digits (e.g., +233 500188614)" required>
+                <input type="text" name="service" id="serviceInput" placeholder="Service Required" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                <textarea name="details" placeholder="Order Details" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" rows="4" required></textarea>
+                <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition">Submit Order</button>
+                <p id="formMessage" class="mt-2"></p>
+            </form>
         </div>
     </section>
 
@@ -136,45 +132,46 @@
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script>
-        // Carousel
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel-item');
-        const totalSlides = slides.length;
+        // Pre-fill service from URL parameter
+        window.addEventListener('load', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const service = urlParams.get('service');
+            if (service) {
+                document.getElementById('serviceInput').value = service;
+            }
 
-        document.getElementById('nextBtn').addEventListener('click', () => {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % totalSlides;
-            slides[currentSlide].classList.add('active');
-        });
-
-        document.getElementById('prevBtn').addEventListener('click', () => {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            slides[currentSlide].classList.add('active');
-        });
-
-        // Inventory Checker (Mock API - replace with real backend endpoint)
-        document.getElementById('checkAvailability').addEventListener('click', () => {
-            const itemName = document.getElementById('itemName').value.toLowerCase();
-            const inventory = {
-                'sedan': 5, 'suv': 3, 'plastic chair': 50, 'cushioned chair': 30,
-                '10x10 canopy': 10, '20x20 canopy': 5, 'round table': 15, 'rectangular table': 12
-            };
-            const result = inventory[itemName] || 0;
-            const message = result > 0 ? `${result} units available` : 'Out of stock';
-            document.getElementById('availabilityResult').textContent = message;
-        });
-
-        // Fade-in animation on scroll
-        window.addEventListener('scroll', () => {
-            document.querySelectorAll('.fade-in').forEach((element, index) => {
-                const position = element.getBoundingClientRect();
-                if (position.top < window.innerHeight) {
-                    setTimeout(() => {
-                        element.classList.add('opacity-100');
-                    }, index * 200);
-                }
+            // Fade-in animation on scroll
+            window.addEventListener('scroll', () => {
+                document.querySelectorAll('.fade-in').forEach((element, index) => {
+                    const position = element.getBoundingClientRect();
+                    if (position.top < window.innerHeight) {
+                        setTimeout(() => {
+                            element.classList.add('opacity-100');
+                        }, index * 200);
+                    }
+                });
             });
+        });
+
+        document.getElementById('orderForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            const response = await fetch('https://dziquist-backend.onrender.com/api/orders', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+            const result = await response.json();
+            const messageDiv = document.getElementById('formMessage');
+            if (response.ok) {
+                messageDiv.textContent = 'Order submitted successfully!';
+                messageDiv.style.color = 'green';
+                window.location.href = 'thank-you.html';
+            } else {
+                messageDiv.textContent = result.error || 'Submission failed.';
+                messageDiv.style.color = 'red';
+            }
         });
     </script>
 </body>
