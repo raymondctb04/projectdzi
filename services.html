@@ -74,6 +74,35 @@
                     <div class="carousel-item flex">
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
                             <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
+                                <p class="text-gray-600">Bus</p>
+                            </div>
+                            <h4 class="text-xl font-semibold mb-2">Bus</h4>
+                            <p class="mb-2">₵1000/day</p>
+                            <p>Spacious bus for up to 30 passengers.</p>
+                            <a href="index.html#contact?service=Bus" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
+                        </div>
+                        <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
+                                <p class="text-gray-600">Truck</p>
+                            </div>
+                            <h4 class="text-xl font-semibold mb-2">Truck</h4>
+                            <p class="mb-2">₵1200/day</p>
+                            <p>Heavy-duty truck for cargo.</p>
+                            <a href="index.html#contact?service=Truck" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item flex">
+                        <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
+                                <p class="text-gray-600">Pickup Truck</p>
+                            </div>
+                            <h4 class="text-xl font-semibold mb-2">Pickup Truck</h4>
+                            <p class="mb-2">₵700/day</p>
+                            <p>Versatile pickup for small loads.</p>
+                            <a href="index.html#contact?service=Pickup Truck" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
+                        </div>
+                        <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
+                            <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
                                 <p class="text-gray-600">Plastic Chair</p>
                             </div>
                             <h4 class="text-xl font-semibold mb-2">Plastic Chair</h4>
@@ -81,6 +110,8 @@
                             <p>Durable plastic chairs for events.</p>
                             <a href="index.html#contact?service=Plastic Chair" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
                         </div>
+                    </div>
+                    <div class="carousel-item flex">
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
                             <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
                                 <p class="text-gray-600">Cushioned Chair</p>
@@ -90,8 +121,6 @@
                             <p>Comfortable cushioned chairs.</p>
                             <a href="index.html#contact?service=Cushioned Chair" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
                         </div>
-                    </div>
-                    <div class="carousel-item flex">
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
                             <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
                                 <p class="text-gray-600">10x10 Canopy</p>
@@ -101,6 +130,8 @@
                             <p>Portable canopy for small gatherings.</p>
                             <a href="index.html#contact?service=10x10 Canopy" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
                         </div>
+                    </div>
+                    <div class="carousel-item flex">
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
                             <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
                                 <p class="text-gray-600">20x20 Canopy</p>
@@ -110,8 +141,6 @@
                             <p>Large canopy for bigger events.</p>
                             <a href="index.html#contact?service=20x20 Canopy" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
                         </div>
-                    </div>
-                    <div class="carousel-item flex">
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
                             <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
                                 <p class="text-gray-600">Round Table</p>
@@ -121,6 +150,8 @@
                             <p>Round table for 6-8 people.</p>
                             <a href="index.html#contact?service=Round Table" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
                         </div>
+                    </div>
+                    <div class="carousel-item flex">
                         <div class="w-full service-card bg-white p-6 rounded-lg shadow-lg text-center mx-2">
                             <div class="h-48 flex items-center justify-center bg-gray-200 rounded-t-lg mb-4">
                                 <p class="text-gray-600">Rectangular Table</p>
@@ -181,8 +212,9 @@
         document.getElementById('checkAvailability').addEventListener('click', () => {
             const itemName = document.getElementById('itemName').value.toLowerCase();
             const inventory = {
-                'sedan': 5, 'suv': 3, 'plastic chair': 50, 'cushioned chair': 30,
-                '10x10 canopy': 10, '20x20 canopy': 5, 'round table': 15, 'rectangular table': 12
+                'sedan': 5, 'suv': 3, 'bus': 2, 'truck': 4, 'pickup truck': 6,
+                'plastic chair': 50, 'cushioned chair': 30, '10x10 canopy': 10,
+                '20x20 canopy': 5, 'round table': 15, 'rectangular table': 12
             };
             const result = inventory[itemName] || 0;
             const message = result > 0 ? `${result} units available` : 'Out of stock';

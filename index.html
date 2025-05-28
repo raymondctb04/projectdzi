@@ -67,7 +67,7 @@
                         <p class="text-gray-600">Car Rentals</p>
                     </div>
                     <h3 class="text-xl font-semibold">Car Rentals</h3>
-                    <p class="text-gray-600">From sedans to SUVs.</p>
+                    <p class="text-gray-600">Sedans, SUVs, buses, trucks, and pickups.</p>
                     <a href="#contact?service=Car Rentals" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Order Now</a>
                 </div>
                 <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
@@ -132,12 +132,17 @@
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script>
-        // Pre-fill service from URL parameter
+        // Pre-fill service from URL parameter and scroll to form
         window.addEventListener('load', () => {
             const urlParams = new URLSearchParams(window.location.search);
             const service = urlParams.get('service');
+            const contactSection = document.getElementById('contact');
             if (service) {
+                console.log('Service from URL:', service); // Debug log
                 document.getElementById('serviceInput').value = service;
+                if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
             }
 
             // Fade-in animation on scroll
